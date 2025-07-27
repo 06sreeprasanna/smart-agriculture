@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Disease Detection{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card">
+            <div class="card-header bg-danger text-white">
+                <h3>Crop Disease Detection</h3>
+            </div>
+            <div class="card-body">
+                {% if error %}
+                <div class="alert alert-danger">{{ error }}</div>
+                {% endif %}
+                
+                {% if show_result %}
+                <div class="text-center mb-4">
+                    <img src="{{ url_for('static', filename=image_path) }}" alt="Plant Image" class="img-fluid rounded" style="max-height: 300px;">
+                </div>
+                <div class="alert {% if 'Healthy' in disease %}alert-success{% else %}alert-warning{% endif %}">
+                    <h4>Detection Result</h4>
+                  <p><strong>Diagnosis:</strong> {{ disease }} 
+                ({% if confidence is string %}{{ confidence }}{% else %}{{ "%.2f"|format(confidence * 100) }}%{% endif %} confidence)</p>
+                    {% if 'Healthy' not in disease %}
+                    <p><strong>Recommended Treatment:</strong> {{ treatment }}</p>
+                    {% endif %}
+                </div>
+                <a href="{{ url_for('main.disease_detection') }}" class="btn btn-outline-danger">New Detection</a>
+                {% else %}
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="file" class="form-label">Upload Plant Image</label>
+                        <input class="form-control" type="file" id="file" name="file" accept="image/*" required>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Detect Disease</button>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
