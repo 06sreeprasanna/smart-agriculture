@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Smart Irrigation{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h3>Smart Irrigation System</h3>
+            </div>
+            <div class="card-body">
+                {% if show_result %}
+                <div class="alert alert-info">
+                    <h4>Irrigation Recommendation</h4>
+                    <p>{{ recommendation }}</p>
+                </div>
+                <div class="weather-info mt-4">
+                    <h5>Current Weather Conditions</h5>
+                    <p>Temperature: {{ weather.temperature }}°C</p>
+                    <p>Humidity: {{ weather.humidity }}%</p>
+                    <p>Condition: {{ weather.condition }}</p>
+                </div>
+                <a href="{{ url_for('main.smart_irrigation') }}" class="btn btn-outline-info mt-3">New Analysis</a>
+                {% else %}
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" class="form-control" id="location" name="location" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="crop_type" class="form-label">Crop Type</label>
+                        <select class="form-select" id="crop_type" name="crop_type" required>
+                            <option value="">Select Crop</option>
+                            <option value="wheat">Wheat</option>
+                            <option value="rice">Rice</option>
+                            <option value="vegetables">Vegetables</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="soil_moisture" class="form-label">Current Soil Moisture (%)</label>
+                        <input type="number" min="0" max="100" class="form-control" id="soil_moisture" name="soil_moisture" required>
+                    </div>
+                    <button type="submit" class="btn btn-info">Get Recommendation</button>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
