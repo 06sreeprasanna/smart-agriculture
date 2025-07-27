@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="hero-section text-center py-5 bg-light rounded">
+    <h1 class="display-4">Smart Agriculture Solutions</h1>
+    <p class="lead">AI-powered tools for modern farming</p>
+</div>
+
+<div class="features-section my-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-seedling fa-3x text-success mb-3"></i>
+                    <h3>Soil Analysis</h3>
+                    <p>Get detailed soil health reports and nutrient analysis</p>
+                    <a href="{{ url_for('main.soil_detection') }}" class="btn btn-outline-success">Analyze Soil</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-bug fa-3x text-danger mb-3"></i>
+                    <h3>Disease Detection</h3>
+                    <p>Identify plant diseases with AI image recognition</p>
+                    <a href="{{ url_for('main.disease_detection') }}" class="btn btn-outline-danger">Detect Diseases</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-tint fa-3x text-primary mb-3"></i>
+                    <h3>Smart Irrigation</h3>
+                    <p>Optimize water usage with smart recommendations</p>
+                    <a href="{{ url_for('main.smart_irrigation') }}" class="btn btn-outline-primary">Irrigation Advice</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
