@@ -1,0 +1,229 @@
+2025-07-06 12:48:41,681 - INFO - 
+================================================================================
+2025-07-06 12:48:41,682 - INFO - Agricultural AI Model Training - Started at 2025-07-06 12:48:41.681488
+2025-07-06 12:48:41,682 - INFO - ================================================================================
+
+2025-07-06 12:48:41,683 - INFO - 
+============================================================
+2025-07-06 12:48:41,683 - INFO - Starting Soil Classification Model Training
+2025-07-06 12:48:41,683 - INFO - ============================================================
+2025-07-06 12:48:41,684 - ERROR - Error in soil data preparation: [Errno 13] Permission denied: 'data/soil_data.csv'
+2025-07-06 12:48:41,685 - ERROR - Soil model training failed: [Errno 13] Permission denied: 'data/soil_data.csv'
+2025-07-06 12:48:41,685 - INFO - 
+============================================================
+2025-07-06 12:48:41,685 - INFO - Starting Plant Disease Model Training
+2025-07-06 12:48:41,685 - INFO - ============================================================
+2025-07-06 12:48:45,457 - INFO - Found 1 plant disease classes
+2025-07-06 12:48:45,457 - INFO - Class distribution: {'plantvillage dataset': 130333}
+2025-07-06 12:48:45,715 - INFO - Training plant disease model...
+2025-07-06 12:48:47,871 - ERROR - Plant disease model training failed: Graph execution error:
+
+indices[0] = 1 is not in [0, 1)
+	 [[{{node GatherV2}}]]
+	 [[IteratorGetNext]] [Op:__inference_train_function_2952]
+2025-07-06 12:48:47,871 - INFO - 
+================================================================================
+2025-07-06 12:48:47,872 - INFO - Training Summary:
+2025-07-06 12:48:47,872 - INFO - - Soil Model: FAILED
+2025-07-06 12:48:47,872 - INFO - - Disease Model: FAILED
+2025-07-06 12:48:47,872 - INFO - - Total Duration: 0:00:06.190308
+2025-07-06 12:48:47,872 - INFO - ================================================================================
+
+2025-07-06 12:48:47,872 - ERROR - Training process failed: One or more models failed to train
+2025-07-06 13:13:08,719 - INFO - 
+================================================================================
+2025-07-06 13:13:08,720 - INFO - Agricultural AI Model Training - Started at 2025-07-06 13:13:08.719054
+2025-07-06 13:13:08,720 - INFO - ================================================================================
+
+2025-07-06 13:13:08,721 - INFO - 
+============================================================
+2025-07-06 13:13:08,721 - INFO - Starting Soil Classification Model Training
+2025-07-06 13:13:08,721 - INFO - ============================================================
+2025-07-06 13:13:08,721 - INFO - data/soil_data.csv not found. Generating synthetic data...
+2025-07-06 13:13:08,782 - INFO - Saved synthetic soil data to data/soil_data.csv
+2025-07-06 13:13:08,806 - INFO - Training soil classification model...
+2025-07-06 13:13:09,514 - INFO - 
+Soil Model Evaluation:
+2025-07-06 13:13:09,514 - INFO - Accuracy: 0.8400
+2025-07-06 13:13:09,518 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.75      0.78       166
+           1       0.78      0.61      0.68       166
+           2       0.99      0.90      0.94       167
+           3       0.62      0.80      0.70       167
+           4       0.91      0.98      0.94       167
+           5       1.00      1.00      1.00       167
+
+    accuracy                           0.84      1000
+   macro avg       0.85      0.84      0.84      1000
+weighted avg       0.85      0.84      0.84      1000
+
+2025-07-06 13:13:09,537 - INFO - Soil model training completed successfully
+2025-07-06 13:13:09,539 - INFO - 
+============================================================
+2025-07-06 13:13:09,539 - INFO - Starting Plant Disease Model Training
+2025-07-06 13:13:09,539 - INFO - ============================================================
+2025-07-06 13:13:10,985 - INFO - Found 38 plant disease classes
+2025-07-06 13:13:10,985 - INFO - Class distribution: {'Apple___Apple_scab': 504, 'Apple___Black_rot': 497, 'Apple___Cedar_apple_rust': 220, 'Apple___healthy': 1316, 'Blueberry___healthy': 1202, 'Cherry_(including_sour)___Powdery_mildew': 842, 'Cherry_(including_sour)___healthy': 684, 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': 411, 'Corn_(maize)___Common_rust_': 954, 'Corn_(maize)___Northern_Leaf_Blight': 788, 'Corn_(maize)___healthy': 930, 'Grape___Black_rot': 944, 'Grape___Esca_(Black_Measles)': 1107, 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': 861, 'Grape___healthy': 339, 'Orange___Haunglongbing_(Citrus_greening)': 4406, 'Peach___Bacterial_spot': 1838, 'Peach___healthy': 288, 'Pepper,_bell___Bacterial_spot': 798, 'Pepper,_bell___healthy': 1183, 'Potato___Early_blight': 800, 'Potato___Late_blight': 800, 'Potato___healthy': 122, 'Raspberry___healthy': 297, 'Soybean___healthy': 4072, 'Squash___Powdery_mildew': 1468, 'Strawberry___Leaf_scorch': 888, 'Strawberry___healthy': 365, 'Tomato___Bacterial_spot': 1702, 'Tomato___Early_blight': 800, 'Tomato___Late_blight': 1528, 'Tomato___Leaf_Mold': 762, 'Tomato___Septoria_leaf_spot': 1417, 'Tomato___Spider_mites Two-spotted_spider_mite': 1341, 'Tomato___Target_Spot': 1124, 'Tomato___Tomato_Yellow_Leaf_Curl_Virus': 4286, 'Tomato___Tomato_mosaic_virus': 299, 'Tomato___healthy': 1273}
+2025-07-06 13:13:11,248 - INFO - Training plant disease model...
+2025-07-06 17:34:28,501 - INFO - 
+================================================================================
+2025-07-06 17:34:28,539 - INFO - Agricultural AI Model Training - Started at 2025-07-06 17:34:28.501076
+2025-07-06 17:34:28,540 - INFO - ================================================================================
+
+2025-07-06 17:34:28,541 - INFO - 
+============================================================
+2025-07-06 17:34:28,541 - INFO - Starting Soil Classification Model Training
+2025-07-06 17:34:28,541 - INFO - ============================================================
+2025-07-06 17:34:28,570 - INFO - Loaded soil data from data/soil_data.csv
+2025-07-06 17:34:28,600 - INFO - Training soil classification model...
+2025-07-06 17:34:29,719 - INFO - 
+Soil Model Evaluation:
+2025-07-06 17:34:29,720 - INFO - Accuracy: 0.8400
+2025-07-06 17:34:29,724 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.75      0.78       166
+           1       0.78      0.61      0.68       166
+           2       0.99      0.90      0.94       167
+           3       0.62      0.80      0.70       167
+           4       0.91      0.98      0.94       167
+           5       1.00      1.00      1.00       167
+
+    accuracy                           0.84      1000
+   macro avg       0.85      0.84      0.84      1000
+weighted avg       0.85      0.84      0.84      1000
+
+2025-07-06 17:34:29,791 - INFO - Soil model training completed successfully
+2025-07-06 17:34:29,794 - INFO - 
+============================================================
+2025-07-06 17:34:29,794 - INFO - Starting Plant Disease Model Training
+2025-07-06 17:34:29,794 - INFO - ============================================================
+2025-07-06 17:34:31,187 - INFO - Found 38 plant disease classes
+2025-07-06 17:34:31,187 - INFO - Class distribution: {'Apple___Apple_scab': 504, 'Apple___Black_rot': 497, 'Apple___Cedar_apple_rust': 220, 'Apple___healthy': 1316, 'Blueberry___healthy': 1202, 'Cherry_(including_sour)___Powdery_mildew': 842, 'Cherry_(including_sour)___healthy': 684, 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': 411, 'Corn_(maize)___Common_rust_': 954, 'Corn_(maize)___Northern_Leaf_Blight': 788, 'Corn_(maize)___healthy': 930, 'Grape___Black_rot': 944, 'Grape___Esca_(Black_Measles)': 1107, 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': 861, 'Grape___healthy': 339, 'Orange___Haunglongbing_(Citrus_greening)': 4406, 'Peach___Bacterial_spot': 1838, 'Peach___healthy': 288, 'Pepper,_bell___Bacterial_spot': 798, 'Pepper,_bell___healthy': 1183, 'Potato___Early_blight': 800, 'Potato___Late_blight': 800, 'Potato___healthy': 122, 'Raspberry___healthy': 297, 'Soybean___healthy': 4072, 'Squash___Powdery_mildew': 1468, 'Strawberry___Leaf_scorch': 888, 'Strawberry___healthy': 365, 'Tomato___Bacterial_spot': 1702, 'Tomato___Early_blight': 800, 'Tomato___Late_blight': 1528, 'Tomato___Leaf_Mold': 762, 'Tomato___Septoria_leaf_spot': 1417, 'Tomato___Spider_mites Two-spotted_spider_mite': 1341, 'Tomato___Target_Spot': 1124, 'Tomato___Tomato_Yellow_Leaf_Curl_Virus': 4286, 'Tomato___Tomato_mosaic_virus': 299, 'Tomato___healthy': 1273}
+2025-07-06 17:34:31,609 - INFO - Training plant disease model...
+2025-07-08 12:23:22,200 - INFO - 
+================================================================================
+2025-07-08 12:23:22,200 - INFO - Agricultural AI Model Training - Started at 2025-07-08 12:23:22.200249
+2025-07-08 12:23:22,200 - INFO - ================================================================================
+
+2025-07-08 12:23:22,200 - INFO - 
+============================================================
+2025-07-08 12:23:22,200 - INFO - Starting Soil Classification Model Training
+2025-07-08 12:23:22,200 - INFO - ============================================================
+2025-07-08 12:23:22,242 - INFO - Loaded soil data from data/soil_data.csv
+2025-07-08 12:23:22,285 - INFO - Training soil classification model...
+2025-07-08 12:23:23,112 - INFO - 
+Soil Model Evaluation:
+2025-07-08 12:23:23,112 - INFO - Accuracy: 0.8400
+2025-07-08 12:23:23,116 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.75      0.78       166
+           1       0.78      0.61      0.68       166
+           2       0.99      0.90      0.94       167
+           3       0.62      0.80      0.70       167
+           4       0.91      0.98      0.94       167
+           5       1.00      1.00      1.00       167
+
+    accuracy                           0.84      1000
+   macro avg       0.85      0.84      0.84      1000
+weighted avg       0.85      0.84      0.84      1000
+
+2025-07-08 12:23:23,168 - INFO - Soil model training completed successfully
+2025-07-08 12:23:23,177 - INFO - 
+============================================================
+2025-07-08 12:23:23,177 - INFO - Starting Plant Disease Model Training
+2025-07-08 12:23:23,177 - INFO - ============================================================
+2025-07-08 12:23:24,886 - INFO - Found 38 plant disease classes
+2025-07-08 12:23:24,886 - INFO - Class distribution: {'Apple___Apple_scab': np.int64(504), 'Apple___Black_rot': np.int64(497), 'Apple___Cedar_apple_rust': np.int64(220), 'Apple___healthy': np.int64(1316), 'Blueberry___healthy': np.int64(1202), 'Cherry_(including_sour)___Powdery_mildew': np.int64(842), 'Cherry_(including_sour)___healthy': np.int64(684), 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': np.int64(411), 'Corn_(maize)___Common_rust_': np.int64(954), 'Corn_(maize)___Northern_Leaf_Blight': np.int64(788), 'Corn_(maize)___healthy': np.int64(930), 'Grape___Black_rot': np.int64(944), 'Grape___Esca_(Black_Measles)': np.int64(1107), 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': np.int64(861), 'Grape___healthy': np.int64(339), 'Orange___Haunglongbing_(Citrus_greening)': np.int64(4406), 'Peach___Bacterial_spot': np.int64(1838), 'Peach___healthy': np.int64(288), 'Pepper,_bell___Bacterial_spot': np.int64(798), 'Pepper,_bell___healthy': np.int64(1183), 'Potato___Early_blight': np.int64(800), 'Potato___Late_blight': np.int64(800), 'Potato___healthy': np.int64(122), 'Raspberry___healthy': np.int64(297), 'Soybean___healthy': np.int64(4072), 'Squash___Powdery_mildew': np.int64(1468), 'Strawberry___Leaf_scorch': np.int64(888), 'Strawberry___healthy': np.int64(365), 'Tomato___Bacterial_spot': np.int64(1702), 'Tomato___Early_blight': np.int64(800), 'Tomato___Late_blight': np.int64(1528), 'Tomato___Leaf_Mold': np.int64(762), 'Tomato___Septoria_leaf_spot': np.int64(1417), 'Tomato___Spider_mites Two-spotted_spider_mite': np.int64(1341), 'Tomato___Target_Spot': np.int64(1124), 'Tomato___Tomato_Yellow_Leaf_Curl_Virus': np.int64(4286), 'Tomato___Tomato_mosaic_virus': np.int64(299), 'Tomato___healthy': np.int64(1273)}
+2025-07-08 12:23:25,260 - INFO - Training plant disease model...
+2025-07-08 12:27:13,622 - INFO - 
+================================================================================
+2025-07-08 12:27:13,622 - INFO - Agricultural AI Model Training - Started at 2025-07-08 12:27:13.622401
+2025-07-08 12:27:13,622 - INFO - ================================================================================
+
+2025-07-08 12:27:13,622 - INFO - 
+============================================================
+2025-07-08 12:27:13,622 - INFO - Starting Soil Classification Model Training
+2025-07-08 12:27:13,622 - INFO - ============================================================
+2025-07-08 12:27:13,641 - INFO - Loaded soil data from data/soil_data.csv
+2025-07-08 12:27:13,674 - INFO - Training soil classification model...
+2025-07-08 12:27:14,498 - INFO - 
+Soil Model Evaluation:
+2025-07-08 12:27:14,498 - INFO - Accuracy: 0.8400
+2025-07-08 12:27:14,505 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.75      0.78       166
+           1       0.78      0.61      0.68       166
+           2       0.99      0.90      0.94       167
+           3       0.62      0.80      0.70       167
+           4       0.91      0.98      0.94       167
+           5       1.00      1.00      1.00       167
+
+    accuracy                           0.84      1000
+   macro avg       0.85      0.84      0.84      1000
+weighted avg       0.85      0.84      0.84      1000
+
+2025-07-08 12:27:14,552 - INFO - Soil model training completed successfully
+2025-07-08 12:27:14,557 - INFO - 
+============================================================
+2025-07-08 12:27:14,557 - INFO - Starting Plant Disease Model Training
+2025-07-08 12:27:14,557 - INFO - ============================================================
+2025-07-08 12:27:16,274 - INFO - Found 38 plant disease classes
+2025-07-08 12:27:16,274 - INFO - Class distribution: {'Apple___Apple_scab': np.int64(504), 'Apple___Black_rot': np.int64(497), 'Apple___Cedar_apple_rust': np.int64(220), 'Apple___healthy': np.int64(1316), 'Blueberry___healthy': np.int64(1202), 'Cherry_(including_sour)___Powdery_mildew': np.int64(842), 'Cherry_(including_sour)___healthy': np.int64(684), 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': np.int64(411), 'Corn_(maize)___Common_rust_': np.int64(954), 'Corn_(maize)___Northern_Leaf_Blight': np.int64(788), 'Corn_(maize)___healthy': np.int64(930), 'Grape___Black_rot': np.int64(944), 'Grape___Esca_(Black_Measles)': np.int64(1107), 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': np.int64(861), 'Grape___healthy': np.int64(339), 'Orange___Haunglongbing_(Citrus_greening)': np.int64(4406), 'Peach___Bacterial_spot': np.int64(1838), 'Peach___healthy': np.int64(288), 'Pepper,_bell___Bacterial_spot': np.int64(798), 'Pepper,_bell___healthy': np.int64(1183), 'Potato___Early_blight': np.int64(800), 'Potato___Late_blight': np.int64(800), 'Potato___healthy': np.int64(122), 'Raspberry___healthy': np.int64(297), 'Soybean___healthy': np.int64(4072), 'Squash___Powdery_mildew': np.int64(1468), 'Strawberry___Leaf_scorch': np.int64(888), 'Strawberry___healthy': np.int64(365), 'Tomato___Bacterial_spot': np.int64(1702), 'Tomato___Early_blight': np.int64(800), 'Tomato___Late_blight': np.int64(1528), 'Tomato___Leaf_Mold': np.int64(762), 'Tomato___Septoria_leaf_spot': np.int64(1417), 'Tomato___Spider_mites Two-spotted_spider_mite': np.int64(1341), 'Tomato___Target_Spot': np.int64(1124), 'Tomato___Tomato_Yellow_Leaf_Curl_Virus': np.int64(4286), 'Tomato___Tomato_mosaic_virus': np.int64(299), 'Tomato___healthy': np.int64(1273)}
+2025-07-08 12:27:16,566 - INFO - Training plant disease model...
+2025-07-09 10:04:30,572 - INFO - 
+================================================================================
+2025-07-09 10:04:30,572 - INFO - Agricultural AI Model Training - Started at 2025-07-09 10:04:30.572540
+2025-07-09 10:04:30,572 - INFO - ================================================================================
+
+2025-07-09 10:04:30,572 - INFO - 
+============================================================
+2025-07-09 10:04:30,572 - INFO - Starting Soil Classification Model Training
+2025-07-09 10:04:30,572 - INFO - ============================================================
+2025-07-09 10:04:30,597 - INFO - Loaded soil data from data/soil_data.csv
+2025-07-09 10:04:30,623 - INFO - Training soil classification model...
+2025-07-09 10:04:31,213 - INFO - 
+Soil Model Evaluation:
+2025-07-09 10:04:31,213 - INFO - Accuracy: 0.8400
+2025-07-09 10:04:31,213 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.75      0.78       166
+           1       0.78      0.61      0.68       166
+           2       0.99      0.90      0.94       167
+           3       0.62      0.80      0.70       167
+           4       0.91      0.98      0.94       167
+           5       1.00      1.00      1.00       167
+
+    accuracy                           0.84      1000
+   macro avg       0.85      0.84      0.84      1000
+weighted avg       0.85      0.84      0.84      1000
+
+2025-07-09 10:04:31,241 - INFO - Soil model training completed successfully
+2025-07-09 10:04:31,241 - INFO - 
+============================================================
+2025-07-09 10:04:31,241 - INFO - Starting Plant Disease Model Training
+2025-07-09 10:04:31,241 - INFO - ============================================================
+2025-07-09 10:04:32,443 - INFO - Found 38 plant disease classes
+2025-07-09 10:04:32,443 - INFO - Class distribution: {'Apple___Apple_scab': np.int64(504), 'Apple___Black_rot': np.int64(497), 'Apple___Cedar_apple_rust': np.int64(220), 'Apple___healthy': np.int64(1316), 'Blueberry___healthy': np.int64(1202), 'Cherry_(including_sour)___Powdery_mildew': np.int64(842), 'Cherry_(including_sour)___healthy': np.int64(684), 'Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot': np.int64(411), 'Corn_(maize)___Common_rust_': np.int64(954), 'Corn_(maize)___Northern_Leaf_Blight': np.int64(788), 'Corn_(maize)___healthy': np.int64(930), 'Grape___Black_rot': np.int64(944), 'Grape___Esca_(Black_Measles)': np.int64(1107), 'Grape___Leaf_blight_(Isariopsis_Leaf_Spot)': np.int64(861), 'Grape___healthy': np.int64(339), 'Orange___Haunglongbing_(Citrus_greening)': np.int64(4406), 'Peach___Bacterial_spot': np.int64(1838), 'Peach___healthy': np.int64(288), 'Pepper,_bell___Bacterial_spot': np.int64(798), 'Pepper,_bell___healthy': np.int64(1183), 'Potato___Early_blight': np.int64(800), 'Potato___Late_blight': np.int64(800), 'Potato___healthy': np.int64(122), 'Raspberry___healthy': np.int64(297), 'Soybean___healthy': np.int64(4072), 'Squash___Powdery_mildew': np.int64(1468), 'Strawberry___Leaf_scorch': np.int64(888), 'Strawberry___healthy': np.int64(365), 'Tomato___Bacterial_spot': np.int64(1702), 'Tomato___Early_blight': np.int64(800), 'Tomato___Late_blight': np.int64(1528), 'Tomato___Leaf_Mold': np.int64(762), 'Tomato___Septoria_leaf_spot': np.int64(1417), 'Tomato___Spider_mites Two-spotted_spider_mite': np.int64(1341), 'Tomato___Target_Spot': np.int64(1124), 'Tomato___Tomato_Yellow_Leaf_Curl_Virus': np.int64(4286), 'Tomato___Tomato_mosaic_virus': np.int64(299), 'Tomato___healthy': np.int64(1273)}
+2025-07-09 10:04:32,738 - INFO - Training plant disease model...
+2025-07-09 10:50:26,533 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 12:08:08,655 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 15:06:42,057 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 16:07:33,022 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 16:40:38,894 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 17:49:26,586 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 17:49:27,202 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 17:49:27,655 - INFO - Plant disease model training completed successfully
+2025-07-09 17:49:27,655 - INFO - 
+================================================================================
+2025-07-09 17:49:27,655 - INFO - Training Summary:
+2025-07-09 17:49:27,655 - INFO - - Soil Model: SUCCESS
+2025-07-09 17:49:27,669 - INFO - - Disease Model: SUCCESS
+2025-07-09 17:49:27,669 - INFO - - Total Duration: 7:44:57.082829
+2025-07-09 17:49:27,669 - INFO - ================================================================================
+

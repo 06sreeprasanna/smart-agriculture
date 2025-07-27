@@ -1,0 +1,60 @@
+2025-07-09 17:56:51,295 - INFO - 
+============================================================
+2025-07-09 17:56:51,295 - INFO - Plant Disease Model Training - Started at 2025-07-09 17:56:51.295999
+2025-07-09 17:56:51,295 - INFO - ============================================================
+2025-07-09 17:56:52,340 - INFO - Found 38 classes in the dataset
+2025-07-09 17:56:52,340 - INFO - Class distribution:
+2025-07-09 17:56:52,340 - INFO - Apple___Apple_scab: 504 samples
+2025-07-09 17:56:52,340 - INFO - Apple___Black_rot: 497 samples
+2025-07-09 17:56:52,340 - INFO - Apple___Cedar_apple_rust: 220 samples
+2025-07-09 17:56:52,340 - INFO - Apple___healthy: 1316 samples
+2025-07-09 17:56:52,340 - INFO - Blueberry___healthy: 1202 samples
+2025-07-09 17:56:52,340 - INFO - Cherry_(including_sour)___Powdery_mildew: 842 samples
+2025-07-09 17:56:52,340 - INFO - Cherry_(including_sour)___healthy: 684 samples
+2025-07-09 17:56:52,340 - INFO - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot: 411 samples
+2025-07-09 17:56:52,340 - INFO - Corn_(maize)___Common_rust_: 954 samples
+2025-07-09 17:56:52,340 - INFO - Corn_(maize)___Northern_Leaf_Blight: 788 samples
+2025-07-09 17:56:52,340 - INFO - Corn_(maize)___healthy: 930 samples
+2025-07-09 17:56:52,340 - INFO - Grape___Black_rot: 944 samples
+2025-07-09 17:56:52,340 - INFO - Grape___Esca_(Black_Measles): 1107 samples
+2025-07-09 17:56:52,340 - INFO - Grape___Leaf_blight_(Isariopsis_Leaf_Spot): 861 samples
+2025-07-09 17:56:52,340 - INFO - Grape___healthy: 339 samples
+2025-07-09 17:56:52,340 - INFO - Orange___Haunglongbing_(Citrus_greening): 4406 samples
+2025-07-09 17:56:52,340 - INFO - Peach___Bacterial_spot: 1838 samples
+2025-07-09 17:56:52,340 - INFO - Peach___healthy: 288 samples
+2025-07-09 17:56:52,340 - INFO - Pepper,_bell___Bacterial_spot: 798 samples
+2025-07-09 17:56:52,340 - INFO - Pepper,_bell___healthy: 1183 samples
+2025-07-09 17:56:52,340 - INFO - Potato___Early_blight: 800 samples
+2025-07-09 17:56:52,340 - INFO - Potato___Late_blight: 800 samples
+2025-07-09 17:56:52,340 - INFO - Potato___healthy: 122 samples
+2025-07-09 17:56:52,340 - INFO - Raspberry___healthy: 297 samples
+2025-07-09 17:56:52,340 - INFO - Soybean___healthy: 4072 samples
+2025-07-09 17:56:52,340 - INFO - Squash___Powdery_mildew: 1468 samples
+2025-07-09 17:56:52,340 - INFO - Strawberry___Leaf_scorch: 888 samples
+2025-07-09 17:56:52,340 - INFO - Strawberry___healthy: 365 samples
+2025-07-09 17:56:52,340 - INFO - Tomato___Bacterial_spot: 1702 samples
+2025-07-09 17:56:52,340 - INFO - Tomato___Early_blight: 800 samples
+2025-07-09 17:56:52,340 - INFO - Tomato___Late_blight: 1528 samples
+2025-07-09 17:56:52,340 - INFO - Tomato___Leaf_Mold: 762 samples
+2025-07-09 17:56:52,340 - INFO - Tomato___Septoria_leaf_spot: 1417 samples
+2025-07-09 17:56:52,343 - INFO - Tomato___Spider_mites Two-spotted_spider_mite: 1341 samples
+2025-07-09 17:56:52,343 - INFO - Tomato___Target_Spot: 1124 samples
+2025-07-09 17:56:52,343 - INFO - Tomato___Tomato_Yellow_Leaf_Curl_Virus: 4286 samples
+2025-07-09 17:56:52,343 - INFO - Tomato___Tomato_mosaic_virus: 299 samples
+2025-07-09 17:56:52,343 - INFO - Tomato___healthy: 1273 samples
+2025-07-09 17:56:52,744 - INFO - Starting model training...
+2025-07-09 18:35:59,058 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 19:09:13,057 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 19:43:13,831 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 20:53:47,526 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 22:14:43,475 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 22:54:56,164 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-09 23:29:43,658 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-10 00:38:05,387 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-10 00:38:05,929 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-07-10 00:38:07,729 - INFO - Training plots saved to 'training_plots' directory
+2025-07-10 00:38:07,744 - INFO - 
+============================================================
+2025-07-10 00:38:07,744 - INFO - Training Completed Successfully
+2025-07-10 00:38:07,744 - INFO - Total Duration: 6:41:16.448335
+2025-07-10 00:38:07,744 - INFO - ============================================================
