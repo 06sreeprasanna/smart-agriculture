@@ -1,0 +1,3 @@
+Single-database configuration for Flask.
+python -m venv venv
+.\venv\Scripts\activate
